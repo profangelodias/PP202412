@@ -1,11 +1,21 @@
 package tech.angelofdiasg.contas;
 
 public class ContaEspecial extends Conta{
-	double limite;
+	private double limite;
 	
-	boolean sacar(double valor) {
-		if(this.saldo >= valor) {
-			this.saldo = this.saldo - (valor * 0.99);
+	public ContaEspecial() {
+		super();
+	}
+	
+	public ContaEspecial(int numero, double saldo, double limite) {
+		super(numero, saldo);
+		this.limite = limite;
+	}
+
+	public boolean sacar(double valor) {
+		if(getSaldo() >= valor) {
+			double novoSaldo = getSaldo() - (valor * 0.99);
+			setSaldo(novoSaldo);
 			return true;
 		} else {
 			return false;

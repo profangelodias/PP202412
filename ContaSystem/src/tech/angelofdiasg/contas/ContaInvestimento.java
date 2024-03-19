@@ -1,29 +1,38 @@
 package tech.angelofdiasg.contas;
 
 public class ContaInvestimento extends Conta{
-	double taxa;
-	int prazo;
+	private double taxa;
+	private int prazo;
 	
-	boolean sacar(double valor) {
-		if(this.saldo >= valor) {
-			this.saldo = this.saldo - (valor * this.taxa);
+	public ContaInvestimento() {
+		super();
+	}
+	
+	public ContaInvestimento(int numero, double saldo, double taxa, int prazo) {
+		super(numero, saldo);
+		this.taxa = taxa;
+		this.prazo = prazo;
+	}
+	
+	public boolean sacar(double valor) {
+		if(getSaldo() >= valor) {
+			double novoSaldo = getSaldo() - (valor * this.taxa);
+			setSaldo(novoSaldo); 
 			return true;
 		} else {
 			return false;
 		}
 	}
-	
-	boolean depositar(double valor) {
+	public boolean depositar(double valor) {
 		if(valor >= 0) {
-			this.saldo = this.saldo + (valor * this.taxa);
+			setSaldo(getSaldo() + (valor * this.taxa));
 			return true;
 		} else {
 			return false;
 		}
 	}
-	
-	void aplicarRendimento(double taxa) {
-		this.saldo = this.saldo + (1 * taxa);
+	public void aplicarRendimento(double taxa) {
+		setSaldo(getSaldo() + (1 * taxa));
 	}
 
 }
