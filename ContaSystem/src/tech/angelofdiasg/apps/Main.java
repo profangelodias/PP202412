@@ -5,7 +5,7 @@ import tech.angelofdiasg.contas.*;
 public class Main {
 
 	public static void main(String[] args) {
-		Conta conta1 = new Conta(1, 1);
+//		Conta conta1 = new Conta(1, 1);
 		ContaEspecial contaesp1 = new ContaEspecial(02, 02, 02);
 		ContaInvestimento contaInv1 = new ContaInvestimento(03, 03, 03, 03);
 		
