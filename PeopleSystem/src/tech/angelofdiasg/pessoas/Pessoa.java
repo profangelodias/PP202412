@@ -1,6 +1,8 @@
 package tech.angelofdiasg.pessoas;
 
-import tech.angelofdiasg.composicoes.*;
+import tech.angelofdiasg.composicoes.Endereco;
+import tech.angelofdiasg.estruturasdedados.*;
+
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -8,7 +10,7 @@ public class Pessoa {
     private String nome;
     private LocalDate dataNascimento;
     private Endereco endereco;
-    private Telefone telsContato;
+    private ListaDeTelefonesNaoOrdenados telsContato;
     public Pessoa(){
         System.out.println("Criando uma pessoa" +
                 " sem atributos!");

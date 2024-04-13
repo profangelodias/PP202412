@@ -1,6 +1,7 @@
 package tech.angelofdiasg;
 
 import tech.angelofdiasg.composicoes.Endereco;
+import tech.angelofdiasg.estruturasdedados.ListaDeTelefonesNaoOrdenados;
 import tech.angelofdiasg.pessoas.*;
 
 import java.time.LocalDate;
@@ -9,6 +10,9 @@ public class Main {
     public static void main(String[] args) {
         Cliente c1 = new Cliente();
         Cliente c2 = new Cliente();
+        ListaDeTelefonesNaoOrdenados list = new ListaDeTelefonesNaoOrdenados();
+        ListaDeTelefonesNaoOrdenados list = new ListaDeTelefonesNaoOrdenados();
+
         Endereco end1 = new Endereco("Rua end1",
                 "Num end1","Cep end1",
                 "Cid end1","estado end1",
