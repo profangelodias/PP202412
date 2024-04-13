@@ -1,6 +1,7 @@
 package tech.angelofdiasg.pessoas;
 
 import tech.angelofdiasg.composicoes.*;
+import tech.angelofdiasg.estruturasdedados.ListaDeTelefonesNaoOrdenados;
 
 import java.time.LocalDate;
 
@@ -12,7 +13,7 @@ public class Cliente extends Pessoa{
                 " sem atributos!");
     }
     public Cliente(String nome, LocalDate dataNascimento,
-                   Endereco endereco, Telefone telsContato, String codigo, Profissao profissao) {
+                   Endereco endereco, ListaDeTelefonesNaoOrdenados telsContato, String codigo, Profissao profissao) {
         super(nome, dataNascimento, endereco, telsContato);
         this.codigo = codigo;
         this.profissao = profissao;

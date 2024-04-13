@@ -3,6 +3,7 @@ package tech.angelofdiasg.pessoas;
 import tech.angelofdiasg.composicoes.Cargo;
 import tech.angelofdiasg.composicoes.Endereco;
 import tech.angelofdiasg.composicoes.Telefone;
+import tech.angelofdiasg.estruturasdedados.ListaDeTelefonesNaoOrdenados;
 
 import java.time.LocalDate;
 
@@ -14,7 +15,7 @@ public class Funcionario extends Pessoa{
 
     public Funcionario() {
     }
-    public Funcionario(String nome, LocalDate dataNascimento, Endereco endereco, Telefone telsContato, int matricula,
+    public Funcionario(String nome, LocalDate dataNascimento, Endereco endereco, ListaDeTelefonesNaoOrdenados telsContato, int matricula,
                        Cargo cargo, double salario, LocalDate dataAdmissao) {
         super(nome, dataNascimento, endereco, telsContato);
         this.matricula = matricula;

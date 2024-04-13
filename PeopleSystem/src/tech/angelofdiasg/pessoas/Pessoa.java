@@ -16,7 +16,7 @@ public class Pessoa {
                 " sem atributos!");
     }
     public Pessoa(String nome, LocalDate dataNascimento,
-                  Endereco endereco, Telefone telsContato) {
+                  Endereco endereco, ListaDeTelefonesNaoOrdenados telsContato) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.endereco = endereco;
@@ -58,11 +58,11 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
-    public Telefone getTelsContato() {
+    public ListaDeTelefonesNaoOrdenados getTelsContato() {
         return telsContato;
     }
 
-    public void setTelsContato(Telefone telsContato) {
+    public void setTelsContato(ListaDeTelefonesNaoOrdenados telsContato) {
         this.telsContato = telsContato;
     }
 }
