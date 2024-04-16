@@ -15,11 +15,6 @@ public class ListaDeTelefonesNaoOrdenados {
         this.telefones = new Telefone[CAPACIDADE_PADRAO];
         this.tamanho = 0;
     }
-    public ListaDeTelefonesNaoOrdenados(Telefone[] lisTels) {
-        this.telefones = lisTels;
-        //capacidade total ou seja não vai funcioar
-        //this.tamanho = lisTels.length;
-    }
 
     public boolean isEmpty() {
         return this.tamanho == 0;

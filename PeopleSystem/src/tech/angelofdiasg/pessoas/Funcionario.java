@@ -4,10 +4,11 @@ import tech.angelofdiasg.composicoes.Cargo;
 import tech.angelofdiasg.composicoes.Endereco;
 import tech.angelofdiasg.composicoes.Telefone;
 import tech.angelofdiasg.estruturasdedados.ListaDeTelefonesNaoOrdenados;
+import tech.angelofdiasg.interfaces.Cadastramento;
 
 import java.time.LocalDate;
 
-public class Funcionario extends Pessoa{
+public class Funcionario extends Pessoa implements Cadastramento {
     private int matricula;
     private Cargo cargo;
     private double salario;
@@ -60,5 +61,10 @@ public class Funcionario extends Pessoa{
 
     public void setDataAdmissao(LocalDate dataAdmissao) {
         this.dataAdmissao = dataAdmissao;
+    }
+
+    @Override
+    public void cadastrar() {
+
     }
 }

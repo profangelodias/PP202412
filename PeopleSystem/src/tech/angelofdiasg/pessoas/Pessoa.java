@@ -22,9 +22,7 @@ public class Pessoa {
         this.endereco = endereco;
         this.telsContato = telsContato;
     }
-    public void cadastrar(){
 
-    }
     public int obterIdade(){
         int idade = 0;
         LocalDate dataAtual = LocalDate.now();
