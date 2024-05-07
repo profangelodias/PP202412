@@ -11,13 +11,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Cliente cli1 = new Cliente();
-//        Endereco end1 = new Endereco();
-        Dependente dep1 = new Dependente();
-        dep1.setClienteParente(cli1);
-//        cli1.setEndereco(end1);
-        Scanner input = new Scanner(System.in);
-
-
+        Pessoa pes1 = new Pessoa();
+        pes1.cadastrar();
+        System.out.println(pes1);
     }
 }

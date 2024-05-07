@@ -13,4 +13,8 @@ public class Dependente {
     public void setClienteParente(Cliente clienteParente) {
         ClienteParente = clienteParente;
     }
+
+    private UUID geradorDeID() {
+        return UUID.randomUUID();
+    }
 }

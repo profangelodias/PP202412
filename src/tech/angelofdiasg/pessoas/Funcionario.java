@@ -7,6 +7,8 @@ import tech.angelofdiasg.estruturasdedados.ListaDeTelefonesNaoOrdenados;
 import tech.angelofdiasg.interfaces.Cadastramento;
 
 import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
 
 public class Funcionario extends Pessoa implements Cadastramento {
     private int matricula;
@@ -16,6 +18,7 @@ public class Funcionario extends Pessoa implements Cadastramento {
 
     public Funcionario() {
     }
+
     public Funcionario(String nome, LocalDate dataNascimento, Endereco endereco, ListaDeTelefonesNaoOrdenados telsContato, int matricula,
                        Cargo cargo, double salario, LocalDate dataAdmissao) {
         super(nome, dataNascimento, endereco, telsContato);
@@ -25,12 +28,14 @@ public class Funcionario extends Pessoa implements Cadastramento {
         this.dataAdmissao = dataAdmissao;
     }
 
-    public void reajustarSalario(double percentual){
-        this.salario = this.salario * (1 + (percentual/100));
+    public void reajustarSalario(double percentual) {
+        this.salario = this.salario * (1 + (percentual / 100));
     }
-    public void promover(Cargo novoCargo){
+
+    public void promover(Cargo novoCargo) {
         this.cargo = novoCargo;
     }
+
     public int getMatricula() {
         return matricula;
     }
@@ -65,6 +70,7 @@ public class Funcionario extends Pessoa implements Cadastramento {
 
     @Override
     public void cadastrar() {
+
 
     }
 }
